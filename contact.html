@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/self.css">
+    <link rel="stylesheet" href="./css/lang.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Contact_Me</title>
+</head>
+<body>
+     <!-- header section start -->
+     <div class="container">
+        <navbar class="head">    
+            <div class="port">
+                <p>Puneetprakash<span>Sharma</span></p>
+            </div>
+            <ul class="menu">
+                <li><a href="index.html">About me</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="lang.html">Languages</a></li>
+                <li><a href="contact.html" target="_blank">Contact me</a></li>
+            </ul>
+            <div class="menu_1">
+                <li class="menu-cancel-icon"><i id="icon-ham-mob" class="fa fa-bars" style="font-size:20px;color:white;" onclick="mymenu()"></i>
+                <li class="menu-cancel-icon"><i id="icon-mob" class="fa fa-times" style="font-size:20px;color:white;" onclick="cancel()"></i>
+                    <div class="menu-mob" id="menu-mob">
+                        <ul class="mob-ul">
+                            <li><a href="index.html">About me</a></li>
+                            <li><a href="project.html">Projects</a></li>
+                            <li><a href="lang.html">Languages</a></li>
+                            <li><a href="contact.html">Contact me</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </div>        
+        </navbar>    
+        </div>
+        <!-- header section end -->
+
+
+        <!-- contact details + message start -->
+    <div class="container contact-container">
+        <div class="contact-flex">
+            <div class="message-container">
+                <h5 id="message_h5">Send a Message</h5>
+                <div class="inp-flex">
+                    <div class="inp-text">
+                        <label for="fname">First Name</label><br>
+                        <input type="text" name="fname" class="mess-inp" placeholder="Aakash">
+                    </div>
+                    <div class="inp-text">
+                        <label for="lname">Last Name</label><br>
+                        <input type="text" name="lname" class="mess-inp" placeholder="Shinde">
+                    </div>
+                </div>
+                <div class="inp-flex">  
+                    <div class="inp-text">
+                        <label for="email">Email</label><br>
+                        <input type="email" name="email" class="mess-inp" placeholder="abc@gmail.com">
+                    </div>
+                    <div class="inp-text">
+                        <label for="tel">Mobile</label><br>
+                        <input type="tel" name="tel" class="mess-inp" placeholder="987654321">
+                    </div>
+                </div>
+                <div class="inp-text">
+                    <label for="textarea">Message</label><br>
+                    <textarea id="mess-area" name="textarea" placeholder="Enter a Message"></textarea>
+                </div>
+                <button type="submit" id="butt-submit">Submit</button>
+            </div>
+            <div class="cont-d">
+                <div id="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d631.432059306058!2d72.80330390506697!3d19.45380570249329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7aa29d980dc95%3A0xb1e83239124cafe1!2sBanjara%20Banquet%20Hall!5e1!3m2!1sen!2sin!4v1683478524170!5m2!1sen!2sin" id="i-map"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                 <div class="cont-d1">
+                    <div id="cont-data_1">
+                        <p id="cont-d1-p">Contact Info</p>
+                        <div class="cont-d-flex" id="cont-dpi">
+                        <i class="material-icons" style="font-size:36px;color:yellow;padding-left: 10px;">pin_drop</i>
+                            <p>D/4 Kusum vihar, near Banjara hotel, viva college road virar west, District - Palghar, Mumbai, Maharashtra. Pincode 401303</p>
+                        </div>
+                        <div class="cont-d-flex">
+                            <i class="fa fa-envelope-square" style="font-size:36px;color:yellow;padding-left: 10px;"></i>
+                            <p>sharmapuneetprakash07@gmail.com</p>
+                        </div>
+                        <div class="cont-d-flex">
+                            <i class="fa fa-phone-square" style="font-size:36px;color:yellow;padding-left: 10px;"></i>
+                            <p>+91 7972638532</p>
+                        </div>
+                        <div id="cont-icon">
+                            <a href="https://twitter.com/Puneet731994"><i class="fa fa-twitter-square" style="font-size:40px;color:wheat;"></i></a>
+                            <a href="https://www.linkedin.com/in/puneetprakash-sharma-7778b126b/"><i class="fa fa-linkedin-square" style="font-size:40px;color:wheat;padding-left: 10px;"></i></a>
+                            <a href="https://github.com/Puneetprakashsharma/js_ecommerce.git"><i class="fa fa-github" style="font-size:40px;color:wheat;padding-left: 10px;"></i></a>
+                            <a href="#"><i class="fa fa-instagram" style="font-size:40px;color:wheat;padding-left: 10px;"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+            <!-- contact details + message start -->
+
+    <script src="./js/self.js"></script>
+    
+</body>
+</html>

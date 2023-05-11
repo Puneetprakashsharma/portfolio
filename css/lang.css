@@ -1,0 +1,136 @@
+
+h2{
+    margin: 60px auto;
+    text-align: center;
+}
+#skill{
+    margin: 0px auto;
+    padding: 15px 270px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    position: relative;
+}
+#skill:after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: orangered;
+    left: 0;
+    bottom: 5px;
+    transition: 0.4s;
+}
+#skill:hover:after{
+    width: 100%;
+}
+.lang-data{
+    margin-top: -32px;
+}
+.lang{
+    padding: 60px 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 100px;
+}
+.lang img{
+    width: 235px;
+    height: 200px;
+    margin: 0px 65px;
+    padding: 0px 30px;
+}
+.lang_h4{
+    margin: 15px auto;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.lang_p{
+    width: 370px;
+    text-align: center;
+    color: aquamarine;
+}
+#git{
+    margin-top: -32px;
+}
+
+@media screen and (min-width: 360px) and (max-width: 767px){
+
+
+    h2{
+        margin: 10px auto;
+        text-align: center;
+    }
+    #skill{
+        margin: 0px auto;
+        text-align: center;
+        padding: 0;
+        color: wheat;
+        font-weight: bold;
+        font-size: 25px;
+    }
+    .lang-data{
+        margin-top: 0px;
+    }
+    .lang_p{
+        margin: 0px auto;
+        font-size: 20px;
+        text-align: center;
+        padding: 0px 30px;
+        width: auto;
+    }
+    .lang{
+        display: block;
+        padding: 0px 0px;
+    }
+    .lang img{
+        display: block;
+        margin: auto;
+        width: 30%;
+        height: 40%;
+        padding: 0px;
+    }
+    .lang_h4{
+        margin: 10px auto;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .lang-datas{
+        margin: 20px 0px;
+    }
+    #git{
+        margin-top: 0px;
+    }    
+}
+
+
+@media screen and (min-width: 767px) and (max-width: 1336px) {
+
+    .container {
+        width: 1336px;
+    }
+
+    .head {
+        padding: 10px 30px;
+    }
+
+    .port {
+        padding: 0px;
+        font-size: 22px;
+    }
+    .menu{
+        padding: 15px 0px;
+    }
+    .menu_1{
+        display: none;
+    }
+    .menu-mob{
+        display: none;
+    }
+}

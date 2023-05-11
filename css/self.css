@@ -1,0 +1,270 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    max-width: 1336px;
+    margin: 0px auto;
+}
+body{
+    background-color: rgb(37, 36, 36);
+}
+.head{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0px;
+    position: sticky;
+}
+.port{
+    padding: 15px 30px;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.port span{
+    color: red;
+    padding-left: 10px;
+}
+.menu{
+    padding: 15px 30px;
+    list-style: none;
+    display: flex;
+    column-gap: 92px;
+}
+.menu li a{
+    font-weight: bold;
+    font-size: 22px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+.menu li a:after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: #a4d162;
+    left: 0;
+    bottom: -7px;
+    transition: 0.5s;
+}
+.menu li a:hover:after{
+    width: 100%;
+}
+.info-name{
+    padding: 110px 30px;
+}
+#information{
+    font-size: 20px;
+    color: rgb(212, 146, 32);
+    font-weight: bold;
+}
+.naam-name, #work{
+    margin: 15px 0px;
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 0.7px;
+    color: whitesmoke;
+}
+#naam{
+    color: brown;
+}
+#hire{
+    margin-top: 25px;
+    width: 150px;
+    height: 45px;
+    border-radius: 10px;
+    font-size: 23px;
+    font-weight: bold;
+    color: white;
+    background-color: #333c3c;
+    margin-right: 30px;
+    border: none;
+    cursor: pointer;
+}
+#hire:hover{
+    background-color: darkgreen;
+}
+
+
+/* #naam{
+    color: brown;
+    position: relative;
+    
+}
+#naam::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background:  rgb(37, 36, 36);
+    border-left: 2px solid #FC6D6D;
+    animation: typing 5s steps(10) infinite;
+}
+@keyframes typing{
+    100%{
+        left: 520px;
+        margin: 0 -45px 0 40px;
+    }
+} */
+
+
+
+
+
+#work{
+    font-size: 23px;
+}
+.info-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.info-flex img{
+    width: 400px;
+    height: 400px;
+    padding-right: 30px;
+    border-radius: 50%;
+}
+#info-para{
+    color: antiquewhite;
+    width: 700px;
+    font-size: 20px;
+    letter-spacing: 0.7px;
+    word-spacing: 0.5px;
+}
+.footer{
+    margin: 0px auto;
+    text-align: center;
+}
+.footer i{
+    padding: 10px 15px;
+}
+.menu_1{
+    display: none;
+}
+
+@media screen and (min-width: 360px) and (max-width: 767px) {
+
+    .container {
+        width: 100% !important;
+        /* padding: 0 30px; */
+    }
+
+    .head {
+        padding: 10px 30px;
+    }
+
+    .port {
+        padding: 0px;
+        font-size: 16px;
+    }
+    
+    .menu {
+        display: none;
+    }
+    .menu_1{
+        display: block;
+    }
+    .menu-mob{
+        display: none;
+    }
+    #icon-mob{
+        display: none;
+    }
+    .menu-cancel-icon{
+        display: inline-block;
+        /* padding-right: 20px; */
+    }
+    .mob-ul{
+        position: fixed;
+        width: 100%;
+        height: 80vh;
+        background-color: rgb(23, 22, 22);
+        top: 100px;
+        left: 0;
+        text-align: center;
+    }
+    .mob-ul li{
+        margin: 50px 0px;
+    }
+    .mob-ul li a{
+        font-weight: bold;
+        font-size: 22px;
+        color: aliceblue;
+        text-decoration: none;
+    }
+    /* .head{
+        margin-left: 20px;
+    } */
+    #information{
+        margin-top: 15px
+    }
+    .info-flex{
+        display: block;
+        padding: 10px 30px;
+    }
+    .info-name{
+        text-align: left;
+        padding: unset;
+    }
+
+    .naam-name {
+        font-size: 28px;
+    }
+
+    #info-para {
+        width: 100%;
+    }
+    #hire{
+        width: 100px;
+        height: 40px;
+        font-size: 16px;
+    }
+    .pic{
+        margin: 0px auto;
+        padding-top: 10px;
+        width: 310px;
+    }
+    .info-flex img{
+        width: 300px;
+        height: 220px;
+        border-radius: 50%;
+        margin: 15px auto;
+        padding-right: 0px;
+    }
+    .footer i{
+        padding: 10px 10px;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1336px) {
+
+    .container {
+        width: 1336px;
+    }
+
+    .head {
+        padding: 10px 30px;
+    }
+
+    .port {
+        padding: 0px;
+        font-size: 22px;
+    }
+    .menu{
+        padding: 15px 0px;
+    }
+    .menu_1{
+        display: none;
+    }
+    .menu-mob{
+        display: none;
+    }
+}
