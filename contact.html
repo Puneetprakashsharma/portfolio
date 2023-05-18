@@ -46,34 +46,36 @@
         <!-- contact details + message start -->
     <div class="container contact-container">
         <div class="contact-flex">
-            <div class="message-container">
-                <h5 id="message_h5">Send a Message</h5>
-                <div class="inp-flex">
-                    <div class="inp-text">
-                        <label for="fname">First Name</label><br>
-                        <input type="text" name="fname" class="mess-inp" placeholder="Aakash">
+            <form name="myForm" action="javascript:void(0);" onsubmit="return validateForm()" method="post">
+                <div class="message-container">
+                    <h5 id="message_h5">Send a Message</h5>
+                    <div class="inp-flex">
+                        <div class="inp-text">
+                            <label for="fletname">First Name</label><br>
+                            <input type="text" name="fletname" class="mess-inp sub-inp" placeholder="Aakash">
+                        </div>
+                        <div class="inp-text">
+                            <label for="fletname">Last Name</label><br>
+                            <input type="text" name="fletname" class="mess-inp sub-inp" placeholder="Shinde">
+                        </div>
+                    </div>
+                    <div class="inp-flex">  
+                        <div class="inp-text">
+                            <label for="fletname">Email</label><br>
+                            <input type="email" name="fletname" class="mess-inp sub-inp" placeholder="abc@gmail.com">
+                        </div>
+                        <div class="inp-text">
+                            <label for="fletname">Mobile</label><br>
+                            <input type="number" name="fletname" class="mess-inp sub-inp" placeholder="987654321">
+                        </div>
                     </div>
                     <div class="inp-text">
-                        <label for="lname">Last Name</label><br>
-                        <input type="text" name="lname" class="mess-inp" placeholder="Shinde">
+                        <label for="fletname">Message</label><br>
+                        <textarea id="mess-area" name="fletname" placeholder="Enter a Message"></textarea>
                     </div>
+                    <button type="submit" id="butt-submit" onclick="validateForm">Submit</button>
                 </div>
-                <div class="inp-flex">  
-                    <div class="inp-text">
-                        <label for="email">Email</label><br>
-                        <input type="email" name="email" class="mess-inp" placeholder="abc@gmail.com">
-                    </div>
-                    <div class="inp-text">
-                        <label for="tel">Mobile</label><br>
-                        <input type="tel" name="tel" class="mess-inp" placeholder="987654321">
-                    </div>
-                </div>
-                <div class="inp-text">
-                    <label for="textarea">Message</label><br>
-                    <textarea id="mess-area" name="textarea" placeholder="Enter a Message"></textarea>
-                </div>
-                <button type="submit" id="butt-submit">Submit</button>
-            </div>
+            </form>
             <div class="cont-d">
                 <div id="map">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d631.432059306058!2d72.80330390506697!3d19.45380570249329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7aa29d980dc95%3A0xb1e83239124cafe1!2sBanjara%20Banquet%20Hall!5e1!3m2!1sen!2sin!4v1683478524170!5m2!1sen!2sin" id="i-map"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -83,7 +85,7 @@
                         <p id="cont-d1-p">Contact Info</p>
                         <div class="cont-d-flex" id="cont-dpi">
                         <i class="material-icons" style="font-size:36px;color:yellow;padding-left: 10px;">pin_drop</i>
-                            <p>D/4 Kusum vihar, near Banjara hotel, viva college road virar west, District - Palghar, Mumbai, Maharashtra. Pincode 401303</p>
+                            <p>D/4 Kusum vihar, near Banjara hotel, viva college road virar west, District - Palghar, Mumbai, Maharashtra 401303</p>
                         </div>
                         <div class="cont-d-flex">
                             <i class="fa fa-envelope-square" style="font-size:36px;color:yellow;padding-left: 10px;"></i>

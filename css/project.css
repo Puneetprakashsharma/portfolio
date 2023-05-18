@@ -90,6 +90,7 @@ h6{
         color: wheat;
         font-weight: bold;
         font-size: 25px;
+        position: static;
     }
     .project-wrap{
         display: block;

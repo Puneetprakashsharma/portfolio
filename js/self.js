@@ -8,3 +8,11 @@ function cancel(){
     document.getElementById("icon-mob").style.display="none";
     document.getElementById("icon-ham-mob").style.display="block";
 }
+function validateForm(){
+    let sub = document.forms["myForm"]["fletname"].value;
+    if(sub==""){
+        alert("Please fill the blank input");
+    }else{
+        alert("Form is successfully submitted. Thank you for visiting.");
+    }
+}

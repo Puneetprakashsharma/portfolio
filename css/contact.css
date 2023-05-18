@@ -49,6 +49,7 @@ input{
     margin-top: 10px;
     width: 700px;
     font-size: 20px;
+    color: white;
     height: 150px;
     padding: 15px 12px;
     border-radius: 15px;
@@ -151,7 +152,7 @@ input{
         margin: 33px;
     }
     .cont-d-flex p{
-        font-size: 12px;
+        font-size: 13px;
         line-height: 15px;
     }
     #map{
