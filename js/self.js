@@ -9,10 +9,22 @@ function cancel(){
     document.getElementById("icon-ham-mob").style.display="block";
 }
 function validateForm(){
-    let sub = document.forms["myForm"]["fletname"].value;
-    if(sub==""){
+    let arr = document.forms["myForm"]["fletname"];
+    let mess = document.getElementById("mess-area").value;
+    let err = false;
+
+    for(let i=0;i<arr.length;i++){
+        if(arr[i].value == ''){
+            err = true;
+        }
+        
+    }
+
+    if(err){
         alert("Please fill the blank input");
-    }else{
+     }
+     else {
         alert("Form is successfully submitted. Thank you for visiting.");
     }
 }
+

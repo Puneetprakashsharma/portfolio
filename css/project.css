@@ -59,6 +59,9 @@ h6{
     color:rgb(198, 190, 153);
     margin-bottom: 30px;
 }
+#linkp{
+    padding: 10px 0px;
+}
 #project-link{
     font-size: 20px;
     font-weight: normal;
@@ -67,7 +70,7 @@ h6{
 }
 .img_div img{
     width: 85%;
-    height: 400px;
+    height: 100%;
     display: block;
     margin: 0px auto;
 }
