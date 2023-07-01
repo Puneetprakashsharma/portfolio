@@ -74,7 +74,8 @@ body{
 #naam{
     color: brown;
 }
-#hire{
+/* ************ original hire button css***************** */
+/* .hire{
     margin-top: 25px;
     width: 150px;
     height: 45px;
@@ -87,32 +88,62 @@ body{
     border: none;
     cursor: pointer;
 }
-#hire:hover{
+.hire:hover{
     background-color: darkgreen;
-}
+} */
+/* ************ original hire button css ends ***************** */
 
 
-/* #naam{
-    color: brown;
+/* ********************* trial of linearGradient starts ***************** */
+.hire-me{
+    color: white;
     position: relative;
-    
+    text-decoration: none;
+    background: linear-gradient(45deg,#0ce39a,#69007f,#fc0987);
+    padding: 14px 15px;
+    border-radius: 10px;
+    font-size: 1.25em;
+    margin-right: 35px;
 }
-#naam::after{
+.hire-me span{
+    position: relative;
+    /* for glow effect start */
+    z-index: 1;
+    /* for glow effect start */
+}
+.hire-me::before{
     content: "";
     position: absolute;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background:  rgb(37, 36, 36);
-    border-left: 2px solid #FC6D6D;
-    animation: typing 5s steps(10) infinite;
+    inset: 1px;
+    background: #272727;
+    border-radius: 9px;
+    transition: 0.5s;
 }
-@keyframes typing{
-    100%{
-        left: 520px;
-        margin: 0 -45px 0 40px;
-    }
-} */
+.hire-me:hover::before{
+    opacity: 0.1;
+}
+
+
+
+/* now add some glow effect to button    */
+
+
+.hire-me::after{
+    content: "";
+    position: absolute;
+    inset: 0px;
+    background: linear-gradient(45deg,#0ce39a,#69007f,#fc0987);
+    border-radius: 9px;
+    transition: 0.5s;
+    opacity: 0;
+    filter: blur(20px);
+}
+.hire-me:hover::after{
+    opacity: 1;
+}
+
+
+/* ********************** trial of linearGradient ends ******************* */
 
 
 
@@ -138,6 +169,7 @@ body{
     font-size: 20px;
     letter-spacing: 0.7px;
     word-spacing: 0.5px;
+    margin-bottom: 30px;
 }
 .footer{
     margin: 0px auto;
