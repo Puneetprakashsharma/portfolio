@@ -254,10 +254,12 @@ body{
     #info-para {
         width: 100%;
     }
-    #hire{
+    .hire{
         width: 100px;
         height: 40px;
         font-size: 16px;
+        padding: 0;
+        margin-right: 0;
     }
     .pic{
         margin: 0px auto;
